@@ -1,0 +1,5 @@
+epsilon,seed,runs,time_steps,k_arms,true_action_value_distribution,reward_distribution,value_update
+0.0,42,2000,1000,10,"Normal(0, 1)","Normal(q_true[action], 1)",sample average
+0.01,42,2000,1000,10,"Normal(0, 1)","Normal(q_true[action], 1)",sample average
+0.1,42,2000,1000,10,"Normal(0, 1)","Normal(q_true[action], 1)",sample average
+0.3,42,2000,1000,10,"Normal(0, 1)","Normal(q_true[action], 1)",sample average

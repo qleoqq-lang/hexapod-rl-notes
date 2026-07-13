@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "runs": 2000,
+  "time_steps": 1000,
+  "k_arms": 10,
+  "epsilons": [
+    0.0,
+    0.01,
+    0.1,
+    0.3
+  ],
+  "comparison_rule": (
+    "All epsilon values share the same q_true testbeds "
+    "and experiment settings, but use independent RNG streams."
+)
+}

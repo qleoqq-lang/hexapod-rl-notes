@@ -1,0 +1,5 @@
+epsilon,early_mean_reward_steps_1_100,late_mean_reward_last_100_steps,early_optimal_action_rate_steps_1_100,late_optimal_action_rate_last_100_steps
+0.0,0.961646,1.034251,0.323840,0.352000
+0.01,0.993336,1.337494,0.344015,0.600065
+0.1,1.021872,1.384766,0.423750,0.796340
+0.3,0.880980,1.079531,0.428560,0.679235

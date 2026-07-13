@@ -7,8 +7,8 @@
 建议周期：2 周
 
 - [x] 跑通 Chapter 2 原始代码并生成 Figure 2.1-2.6
-- [ ] 完成 epsilon-greedy 参数对比实验
-- [ ] 写出 `bandit_experiment.md`
+- [x] 完成 epsilon-greedy 参数对比实验
+- [x] 写出 `bandit_experiment.md`
 - [ ] 跑通 Chapter 4 policy evaluation / value iteration
 - [ ] 比较不同 gamma 下的 value table
 - [ ] 写出 `gridworld_value_iteration.md`
@@ -35,4 +35,3 @@
 ## Stage 4：六足机器人应用
 
 实验代码和项目结果进入 [hexapod-rl](https://github.com/qleoqq-lang/hexapod-rl)，本仓库继续记录算法选择、参数分析和失败实验。
-

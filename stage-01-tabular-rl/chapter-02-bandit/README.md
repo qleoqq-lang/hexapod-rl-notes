@@ -11,7 +11,6 @@
 
 - 上游仓库：[ShangtongZhang/reinforcement-learning-an-introduction](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 - 主要脚本：`chapter02/ten_armed_testbed.py`
-- 当前进度：已运行 Figure 2.1-2.6，下一步是完成自己的 epsilon 参数实验。
 
 ## 图表分类
 
@@ -22,9 +21,25 @@
 | Figure 2.1 | 10 个动作的 reward 分布是什么样？ |
 | Figure 2.2 | epsilon 为 0、0.01、0.1 时，平均 reward 和最优动作比例如何变化？ |
 
-![10-armed testbed](figures/main/figure_2_1.png)
+<figure>
+<img src="figures/main/figure_2_1.png" width="600">
 
-![epsilon-greedy comparison](figures/main/figure_2_2.png)
+<figcaption>
+Figure 2.1: 10-armed testbed reward distribution
+</figcaption>
+
+</figure>
+
+
+<figure>
+<img src="figures/main/figure_2_2.png" width="600">
+
+<figcaption>
+Figure 2.2 epsilon-greedy comparison
+</figcaption>
+
+</figure>
+
 
 ### 扩展理解
 
@@ -37,9 +52,9 @@
 
 详细说明见 [图表导读](figures-guide.md)。
 
-## 下一次实验
+## Epsilon 参数实验
 
-固定随机种子、runs 和 time steps，只修改 epsilon。建议先比较：
+已完成固定随机种子、runs 和 time steps，只修改 epsilon 的对比实验：
 
 ```text
 epsilon = 0
@@ -48,14 +63,16 @@ epsilon = 0.1
 epsilon = 0.3
 ```
 
-需要保存：
+实验成果：
 
-- 平均 reward 曲线。
-- 最优动作比例曲线。
-- 完整参数表。
-- 对前期、后期表现差异的解释。
+- [完整实验记录](bandit-experiment.md)
+- [可复现实验脚本](epsilon_experiment.py)
+- [平均 reward 曲线](results/epsilon-average-reward.png)
+- [最优动作比例曲线](results/epsilon-optimal-action-rate.png)
+- [完整参数表](results/parameters.csv)
+- [前期与后期数值汇总](results/summary.csv)
 
-完成后用 [实验记录模板](../../templates/experiment-note.md) 新建 `bandit-experiment.md`。
+本次结果中，`epsilon = 0.1` 的后期平均 reward 和最优动作比例最高；`epsilon = 0.3` 前期探索积极，但长期持续随机选择带来了明显代价。
 
 ## 与六足机器人的联系
 
