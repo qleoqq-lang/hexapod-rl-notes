@@ -9,8 +9,5 @@
     0.1,
     0.3
   ],
-  "comparison_rule": (
-    "All epsilon values share the same q_true testbeds "
-    "and experiment settings, but use independent RNG streams."
-)
+  "comparison_rule": "All epsilon values share the same q_true testbeds and experiment settings, but use independent RNG streams."
 }
